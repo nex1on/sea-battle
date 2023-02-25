@@ -1,0 +1,485 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Морской бой</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  </head>
+  <body>
+    
+    <div>
+      <span class="text-primary fs-5">Кораблей синих - 2</span>
+      <span class="px-2 text-success fs-5">Кораблей зелёный - 3</span>
+      <span class="px-2 text-danger fs-5">Кораблей красных - 2</span>
+      <span class="px-2 text-warning fs-5">Кораблей жёлтых - 2</span>
+      <h1 class="fs-1 text-center">Score: <span class="score">0</span></h1>
+    </div>
+
+    <div class="d-flex" style="margin-left: 450px;">
+      <div class="mt-5 border border-dark border-2" style="height: 80px; width: 80px;">
+        <p class="text-center fs-2">0</p>
+      </div>
+      <div class="mt-5 border border-dark border-2" style="height: 80px; width: 80px;">
+        <p class="text-center fs-2">1</p>
+      </div>
+      <div class="border border-dark border-2 mt-5" style="height: 80px; width: 80px;">
+        <p class="text-center fs-2">2</p>
+      </div>
+      <div class="border border-dark border-2 mt-5" style="height: 80px; width: 80px;">
+        <p class="text-center fs-2">3</p>
+      </div>
+      <div class="border border-dark border-2 mt-5" style="height: 80px; width: 80px;">
+        <p class="text-center fs-2">4</p>
+      </div>
+      <div class="border border-dark border-2 mt-5" style="height: 80px; width: 80px;">
+        <p class="text-center fs-2">5</p>
+      </div>
+      <div class="border border-dark border-2 mt-5" style="height: 80px; width: 80px;">
+        <p class="text-center fs-2">6</p>
+      </div>
+      <div class="border border-dark border-2 mt-5" style="height: 80px; width: 80px;">
+        <p class="text-center fs-2">7</p>
+      </div>
+      <div class="border border-dark border-2 mt-5" style="height: 80px; width: 80px;">
+        <p class="text-center fs-2">8</p>
+      </div>
+      <div class="border border-dark border-2 mt-5" style="height: 80px; width: 80px;">
+        <p class="text-center fs-2">9</p>
+      </div>
+      <div class="border border-dark border-2 mt-5" style="height: 80px; width: 80px;">
+        <p class="text-center fs-2">10</p>
+      </div>
+    </div>
+
+    <div class="d-flex" style="margin-left: 450px;">
+      <div class="border border-dark border-2" style="height: 80px; width: 80px;">
+        <p class="fs-2 text-center">A</p>
+      </div>
+      <div class="miss border border-dark border-2" style="height: 80px; width: 80px;">
+
+      </div>
+      <div class="miss border border-dark border-2" style="height: 80px; width: 80px;">
+        
+      </div>
+      <div class="miss border border-dark border-2" style="height: 80px; width: 80px;">
+        
+      </div>
+      <div class="miss border border-dark border-2" style="height: 80px; width: 80px;">
+        
+      </div>
+      <div class="korablYellow border border-dark border-2" style="height: 80px; width: 80px;">
+        
+      </div>
+      <div class="miss border border-dark border-2" style="height: 80px; width: 80px;">
+        
+      </div>
+      <div class="miss border border-dark border-2" style="height: 80px; width: 80px;">
+        
+      </div>
+      <div class="korablGreen border border-dark border-2" style="height: 80px; width: 80px;">
+        
+      </div>
+      <div class="korablGreen border border-dark border-2" style="height: 80px; width: 80px;">
+        
+      </div>
+      <div class="korablGreen border border-dark border-2" style="height: 80px; width: 80px;">
+        
+      </div>
+    </div>
+    
+    <div class="d-flex" style="margin-left: 450px;">
+      <div class="border border-dark border-2" style="height: 80px; width: 80px;">
+        <p class="fs-2 text-center">Б</p>
+      </div>
+      <div class="miss border border-dark border-2" style="height: 80px; width: 80px;">
+
+      </div>
+      <div class="korablBlue border border-dark border-2" style="height: 80px; width: 80px;">
+        
+      </div>
+      <div class="miss border border-dark border-2" style="height: 80px; width: 80px;">
+        
+      </div>
+      <div class="miss border border-dark border-2" style="height: 80px; width: 80px;">
+        
+      </div>
+      <div class="miss border border-dark border-2" style="height: 80px; width: 80px;">
+        
+      </div>
+      <div class="miss border border-dark border-2" style="height: 80px; width: 80px;">
+        
+      </div>
+      <div class="miss border border-dark border-2" style="height: 80px; width: 80px;">
+        
+      </div>
+      <div class="miss border border-dark border-2" style="height: 80px; width: 80px;">
+        
+      </div>
+      <div class="miss border border-dark border-2" style="height: 80px; width: 80px;">
+        
+      </div>
+      <div class="miss border border-dark border-2" style="height: 80px; width: 80px;">
+        
+      </div>
+    </div>
+
+    <div class="d-flex" style="margin-left: 450px;">
+      <div class="border border-dark border-2" style="height: 80px; width: 80px;">
+        <p class="fs-2 text-center">В</p>
+      </div>
+      <div class="miss border border-dark border-2" style="height: 80px; width: 80px;">
+
+      </div>
+      <div class="korablBlue border border-dark border-2" style="height: 80px; width: 80px;">
+        
+      </div>
+      <div class="miss border border-dark border-2" style="height: 80px; width: 80px;">
+        
+      </div>
+      <div class="miss border border-dark border-2" style="height: 80px; width: 80px;">
+        
+      </div>
+      <div class="miss border border-dark border-2" style="height: 80px; width: 80px;">
+        
+      </div>
+      <div class="miss border border-dark border-2" style="height: 80px; width: 80px;">
+        
+      </div>
+      <div class="miss border border-dark border-2" style="height: 80px; width: 80px;">
+        
+      </div>
+      <div class="miss border border-dark border-2" style="height: 80px; width: 80px;">
+        
+      </div>
+      <div class="miss border border-dark border-2" style="height: 80px; width: 80px;">
+        
+      </div>
+      <div class="miss border border-dark border-2" style="height: 80px; width: 80px;">
+        
+      </div>
+    </div>
+
+    <div class="d-flex" style="margin-left: 450px;">
+      <div class="border border-dark border-2" style="height: 80px; width: 80px;">
+        <p class="fs-2 text-center">Г</p>
+      </div>
+      <div class="miss border border-dark border-2" style="height: 80px; width: 80px;">
+
+      </div>
+      <div class="korablBlue border border-dark border-2" style="height: 80px; width: 80px;">
+        
+      </div>
+      <div class="miss border border-dark border-2" style="height: 80px; width: 80px;">
+        
+      </div>
+      <div class="miss border border-dark border-2" style="height: 80px; width: 80px;">
+        
+      </div>
+      <div class="miss border border-dark border-2" style="height: 80px; width: 80px;">
+        
+      </div>
+      <div class="miss border border-dark border-2" style="height: 80px; width: 80px;">
+        
+      </div>
+      <div class="miss border border-dark border-2" style="height: 80px; width: 80px;">
+        
+      </div>
+      <div class="miss border border-dark border-2" style="height: 80px; width: 80px;">
+        
+      </div>
+      <div class="miss border border-dark border-2" style="height: 80px; width: 80px;">
+        
+      </div>
+      <div class="miss border border-dark border-2" style="height: 80px; width: 80px;">
+        
+      </div>
+    </div>
+
+    <div class="d-flex" style="margin-left: 450px;">
+      <div class="border border-dark border-2" style="height: 80px; width: 80px;">
+        <p class="fs-2 text-center">Д</p>
+      </div>
+      <div class="miss border border-dark border-2" style="height: 80px; width: 80px;">
+
+      </div>
+      <div class="korablBlue border border-dark border-2" style="height: 80px; width: 80px;">
+        
+      </div>
+      <div class="miss border border-dark border-2" style="height: 80px; width: 80px;">
+        
+      </div>
+      <div class="miss border border-dark border-2" style="height: 80px; width: 80px;">
+        
+      </div>
+      <div class="korablGreen border border-dark border-2" style="height: 80px; width: 80px;">
+        
+      </div>
+      <div class="korablGreen border border-dark border-2" style="height: 80px; width: 80px;">
+        
+      </div>
+      <div class="korablGreen border border-dark border-2" style="height: 80px; width: 80px;">
+        
+      </div>
+      <div class="miss border border-dark border-2" style="height: 80px; width: 80px;">
+        
+      </div>
+      <div class="miss border border-dark border-2" style="height: 80px; width: 80px;">
+        
+      </div>
+      <div class="korablRed border border-dark border-2" style="height: 80px; width: 80px;">
+        
+      </div>
+    </div>
+
+    <div class="d-flex" style="margin-left: 450px;">
+      <div class="border border-dark border-2" style="height: 80px; width: 80px;">
+        <p class="fs-2 text-center">Е</p>
+      </div>
+      <div class="miss border border-dark border-2" style="height: 80px; width: 80px;">
+      </div>
+      <div class="miss border border-dark border-2" style="height: 80px; width: 80px;">
+        
+      </div>
+      <div class="miss border border-dark border-2" style="height: 80px; width: 80px;">
+        
+      </div>
+      <div class="miss border border-dark border-2" style="height: 80px; width: 80px;">
+        
+      </div>
+      <div class="miss border border-dark border-2" style="height: 80px; width: 80px;">
+        
+      </div>
+      <div class="miss border border-dark border-2" style="height: 80px; width: 80px;">
+        
+      </div>
+      <div class="miss border border-dark border-2" style="height: 80px; width: 80px;">
+        
+      </div>
+      <div class="miss border border-dark border-2" style="height: 80px; width: 80px;">
+        
+      </div>
+      <div class="miss border border-dark border-2" style="height: 80px; width: 80px;">
+        
+      </div>
+      <div class="korablRed border border-dark border-2" style="height: 80px; width: 80px;">
+        
+      </div>
+    </div>
+
+    <div class="d-flex" style="margin-left: 450px;">
+      <div class="border border-dark border-2" style="height: 80px; width: 80px;">
+        <p class="fs-2 text-center">Ж</p>
+      </div>
+      <div class="miss border border-dark border-2" style="height: 80px; width: 80px;">
+
+      </div>
+      <div class="miss border border-dark border-2" style="height: 80px; width: 80px;">
+        
+      </div>
+      <div class="miss border border-dark border-2" style="height: 80px; width: 80px;">
+        
+      </div>
+      <div class="miss border border-dark border-2" style="height: 80px; width: 80px;">
+        
+      </div>
+      <div class="korablRed border border-dark border-2" style="height: 80px; width: 80px;">
+        
+      </div>
+      <div class="korablRed border border-dark border-2" style="height: 80px; width: 80px;">
+        
+      </div>
+      <div class="miss border border-dark border-2" style="height: 80px; width: 80px;">
+        
+      </div>
+      <div class="miss border border-dark border-2" style="height: 80px; width: 80px;">
+        
+      </div>
+      <div class="miss border border-dark border-2" style="height: 80px; width: 80px;">
+        
+      </div>
+      <div class="miss border border-dark border-2" style="height: 80px; width: 80px;">
+        
+      </div>
+    </div>
+
+    <div class="d-flex" style="margin-left: 450px;">
+      <div class="border border-dark border-2" style="height: 80px; width: 80px;">
+        <p class="fs-2 text-center">З</p>
+      </div>
+      <div class="korablGreen border border-dark border-2" style="height: 80px; width: 80px;">
+
+      </div>
+      <div class="miss border border-dark border-2" style="height: 80px; width: 80px;">
+        
+      </div>
+      <div class="miss border border-dark border-2" style="height: 80px; width: 80px;">
+        
+      </div>
+      <div class="miss border border-dark border-2" style="height: 80px; width: 80px;">
+        
+      </div>
+      <div class="miss border border-dark border-2" style="height: 80px; width: 80px;">
+        
+      </div>
+      <div class="miss border border-dark border-2" style="height: 80px; width: 80px;">
+        
+      </div>
+      <div class="miss border border-dark border-2" style="height: 80px; width: 80px;">
+        
+      </div>
+      <div class="miss border border-dark border-2" style="height: 80px; width: 80px;">
+        
+      </div>
+      <div class="miss border border-dark border-2" style="height: 80px; width: 80px;">
+        
+      </div>
+      <div class="miss border border-dark border-2" style="height: 80px; width: 80px;">
+        
+      </div>
+    </div>
+
+    <div class="d-flex" style="margin-left: 450px;">
+      <div class="border border-dark border-2" style="height: 80px; width: 80px;">
+        <p class="fs-2 text-center">И</p>
+      </div>
+      <div class="korablGreen border border-dark border-2" style="height: 80px; width: 80px;">
+
+      </div>
+      <div class="miss border border-dark border-2" style="height: 80px; width: 80px;">
+        
+      </div>
+      <div class="miss border border-dark border-2" style="height: 80px; width: 80px;">
+        
+      </div>
+      <div class="miss border border-dark border-2" style="height: 80px; width: 80px;">
+        
+      </div>
+      <div class="miss border border-dark border-2" style="height: 80px; width: 80px;">
+        
+      </div>
+      <div class="miss border border-dark border-2" style="height: 80px; width: 80px;">
+        
+      </div>
+      <div class="korablBlue border border-dark border-2" style="height: 80px; width: 80px;">
+        
+      </div>
+      <div class="korablBlue border border-dark border-2" style="height: 80px; width: 80px;">
+        
+      </div>
+      <div class="korablBlue border border-dark border-2" style="height: 80px; width: 80px;">
+        
+      </div>
+      <div class="korablBlue border border-dark border-2" style="height: 80px; width: 80px;">
+        
+      </div>
+    </div>
+
+    <div class="d-flex" style="margin-left: 450px;">
+      <div class="border border-dark border-2" style="height: 80px; width: 80px;">
+        <p class="fs-2 text-center">Й</p>
+      </div>
+      <div class="korablGreen border border-dark border-2" style="height: 80px; width: 80px;">
+
+      </div>
+      <div class="miss border border-dark border-2" style="height: 80px; width: 80px;">
+        
+      </div>
+      <div class="korablYellow border border-dark border-2" style="height: 80px; width: 80px;">
+        
+      </div>
+      <div class="miss border border-dark border-2" style="height: 80px; width: 80px;">
+        
+      </div>
+      <div class="miss border border-dark border-2" style="height: 80px; width: 80px;">
+        
+      </div>
+      <div class="miss border border-dark border-2" style="height: 80px; width: 80px;">
+        
+      </div>
+      <div class="miss border border-dark border-2" style="height: 80px; width: 80px;">
+        
+      </div>
+      <div class="miss border border-dark border-2" style="height: 80px; width: 80px;">
+        
+      </div>
+      <div class="miss border border-dark border-2" style="height: 80px; width: 80px;">
+        
+      </div>
+      <div class="miss border border-dark border-2" style="height: 80px; width: 80px;">
+        
+      </div>
+    </div>
+
+    <script type="text/javascript">
+
+      // Переменные
+      let korablBlue = document.querySelectorAll('.korablBlue');
+      let korablGreen = document.querySelectorAll('.korablGreen');
+      let korablYellow = document.querySelectorAll('.korablYellow');
+      let korablRed = document.querySelectorAll('.korablRed');
+      let miss = document.querySelectorAll('.miss');
+      let score = document.querySelector('.score');
+      let score1 = 0;
+
+      // Корабли синие
+      for (let i = 0; i < 8; i = i + 1) {
+        korablBlue[i].onclick = function() {
+          score1 = score1 + 1;
+          score.innerHTML = score1;
+          korablBlue[i].style.background = "blue";
+          if (score1==23) {
+            alert("You win!")
+          }
+        }
+      }
+
+      // Корабли зелёные
+      for (let i = 0; i < 9; i = i + 1) {
+        korablGreen[i].onclick = function() {
+          score1 = score1 + 1;
+          score.innerHTML = score1;
+          korablGreen[i].style.background = "green";
+          if (score1==23) {
+            alert("You win!")
+          }
+        }
+      }
+
+      // Корабли жёлтые
+      for (let i = 0; i < 2; i = i + 1) {
+        korablYellow[i].onclick = function() {
+          score1 = score1 + 1;
+          score.innerHTML = score1;
+          korablYellow[i].style.background = "yellow";
+          if (score1==23) {
+            alert("You win!")
+          }
+        }
+      }
+
+      // Корабли красные
+      for (let i = 0; i < 4; i = i + 1) {
+        korablRed[i].onclick = function() {
+          score1 = score1 + 1;
+          score.innerHTML = score1;
+          korablRed[i].style.background = "Red";
+          if (score1==23) {
+            alert("You win!")
+          }
+        }
+      }
+
+      // Промахи
+      for (let i = 0; i < 77; i = i + 1) {
+        miss[i].onclick = function() {
+          miss[i].style.backgroundImage = "url(tochka.png)"
+          miss[i].style.backgroundSize = "100% 100%"
+        }
+      }
+ 
+
+
+    </script>
+  </body>
+</html>
